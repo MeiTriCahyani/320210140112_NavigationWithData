@@ -23,8 +23,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.pamlayout.ui.theme.PAMLayoutTheme
 
 @Composable
 fun HalamanHome(
@@ -70,7 +72,8 @@ fun HalamanHome(
                         .padding(dimensionResource(R.dimen.padding_medium))
                         .weight(
                             1f,
-                            fill = false),
+                            fill = false
+                        ),
                     horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_medium)),
                     verticalAlignment = Alignment.Bottom
                 ){
@@ -83,5 +86,12 @@ fun HalamanHome(
                 }
             }
         }
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun PreviewHalamanHome(){
+    PAMLayoutTheme{
+        HalamanHome (onNextbuttonCliked = {})
     }
 }

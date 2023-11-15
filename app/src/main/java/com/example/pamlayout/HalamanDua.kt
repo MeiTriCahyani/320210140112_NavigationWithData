@@ -50,6 +50,9 @@ fun HalamanDua(
                     Text(item.first, fontWeight = FontWeight.Bold)
                     Text(text = item.second)
                 }
+                Divider(
+                    thickness = dimensionResource(R.dimen.thickness_divider)
+                )
             }
 
             items.forEach { item ->

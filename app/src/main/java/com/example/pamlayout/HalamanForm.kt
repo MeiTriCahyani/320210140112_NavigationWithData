@@ -16,4 +16,6 @@ fun HalamanFrom(
     var almtTxt by remember { mutableStateOf("") }
     var tlpnTxt by remember { mutableStateOf("") }
 
+    var listData: MutableList<String> = mutableListOf(namaTxt, almtTxt, tlpnTxt)
+
 }

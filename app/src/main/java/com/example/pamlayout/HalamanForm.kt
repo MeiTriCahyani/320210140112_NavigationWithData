@@ -38,6 +38,9 @@ fun HalamanFrom(
         OutlinedTextField(value = tlpnTxt, onValueChange = { tlpnTxt = it }, label = {
             Text(text = stringResource(id = R.string.nohp))
         })
+        OutlinedTextField(value = almtTxt, onValueChange = { almtTxt = it }, label = {
+            Text(text = stringResource(id = R.string.almt))
+        })
 
     }
 

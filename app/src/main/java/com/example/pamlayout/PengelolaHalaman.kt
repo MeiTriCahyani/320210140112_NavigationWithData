@@ -35,7 +35,8 @@ import com.example.pamlayout.Data.SumberData.flavors
 enum class PengelolaHalaman {
     Home,
     Rasa,
-    Summary
+    Summary,
+    Contac
 }
 @Composable
 fun EsJumboAppBar(
@@ -98,6 +99,13 @@ fun EsJumboApp(
                     onCancelButtonClicked = { cancelOrderAndNavigateToRasa(navController) },
                 )
             }
+            composable(route = PengelolaHalaman.Contac.name){
+                HalamanFrom(onSubmitButtonClicked = {
+                    viewModel.setContact(it)
+                    navController.navigate(PengelolaHalaman.Rasa.name)
+                })
+            }
+
         }
     }
 }

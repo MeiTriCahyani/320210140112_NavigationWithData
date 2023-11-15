@@ -1,5 +1,6 @@
 package com.example.pamlayout
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -17,5 +18,10 @@ fun HalamanFrom(
     var tlpnTxt by remember { mutableStateOf("") }
 
     var listData: MutableList<String> = mutableListOf(namaTxt, almtTxt, tlpnTxt)
+    Column(
+
+    ) {
+
+    }
 
 }
